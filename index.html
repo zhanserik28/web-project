@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  background-color: #555;
+  overflow: auto;
+  padding: 7px;
+    width: 100%;
+}
+
+
+div.line{
+   width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.menu{
+
+line-height: 1.5em;
+
+margin: 0;
+padding: 6px;
+margin-right:  25px;
+width: 45px;
+padding-left: 20px;
+padding-right: 40px;
+font-size: 14px;
+cursor: pointer;
+}
+.condent{
+
+font: 14px Verdana,Arial,Helvetica;
+color: #FFF;
+font-size: 14px;
+cursor: pointer;
+line-height: 1.5em;
+padding: 2px;
+margin: 0 0 0 0;
+margin-top: -8px;
+margin-left: -10px;
+}
+.table{
+  cursor: pointer;
+
+}
+.cell{
+  padding: 4px;
+}
+.cell1{
+  width: 50px;
+  margin-top: -5px;
+}
+.p1{
+line-height: 1.5em;
+font: 14px Verdana,Arial,Helvetica;
+font-family: 'Roboto',sans-serif;
+color: #fff;
+}
+
+.cell1 a{
+  text-decoration: none;
+  position: relative;
+  left: 0px;
+  top: -10px;
+  vertical-align: middle;
+
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+* {
+
+  box-sizing: border-box;
+}
+.search_container{
+  margin-right: 50px;
+}
+
+
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-area{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(85,85,85);
+  letter-spacing: 2px;
+  width: 440px;
+  font-family: Poppins;
+  font-size: 15px;
+  line-height: 15px;
+}
+.nav-area a,
+.nav-area a:link,
+.nav-area a:visited,
+.nav-area a:focus{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-area a:hover{
+  color: #247c9d;
+  text-decoration: none;
+}
+
+.nav-area > li {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: bold;
+}
+.nav-area > li > a{
+  padding: 40px 20px;
+  display: block;
+}
+.nav-area > li:hover a{
+  color: #fff
+}
+.nav-area > li > .sub-nav{
+  list-style: none;
+  top: 0;
+  left: 450px;
+  width: 400px;
+  min-height: 100%;
+  text-align: left;
+  margin-top: 30px;
+  padding: 0;
+  z-index: 99;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+
+}
+.nav-area > li:hover > .sub-nav{
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+  background: #fff;
+}
+.nav-area ul li:hover:after{
+  color: #247c9d
+}
+
+.nav-area .sub-menu{
+  width: 100%;
+  float: left;
+  color: #fff
+  margin: 0 0 0 15px;
+}
+.nav-area .sub-menu ul{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-area .sub-menu ul li{
+  padding: 0;
+  list-style: none;
+  font-size: 25px;
+}
+.nav-area .sub-menu h3{
+  font-size: 20px;
+  padding: 10px 10px;
+  font-weight: bold;
+  margin: 30px 30px 30px 0;
+  color: #fff;
+  background: #313131;
+
+}
+.nav-area .sub-menu ul li a{
+  display: block;
+  padding: 0 0 15px 0;
+  color: #247c9d;
+}
+.nav-area .sub-menu ul li a:hover{
+  color: #313131;
+}
+.nav-area > li >ul li ul,
+.nav-area li > ul li,
+.nav-area > li > .sub-nav,
+.nav-area > li > ul,
+.nav-area > li{
+  -webkit-transition : all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+
+
+
+
+
+}
+#img_1{
+  position: absolute;
+  top: 135px;
+  right: 0px;
+}
+.telephone_container{
+  position: absolute;
+  top: 100px;
+  left: 470px;
+  width: 500px;
+  
+}
+.telephone a{
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.address_container{
+    width: 500px;
+  display: inline-block;
+
+}
+.address{
+  margin-top: 5px;
+  color: orange;
+  font-size: 25px;
+  font-weight: bold;
+  
+
+}
+
+
+
+
+
+}
+</style>
+<body>
+
+<div class="navbar">
+  <div class = "menu container" style="display: inline-block;">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <p class="condent">Каталог</p>
+</div>
+<div class="logo" style="display: inline-block;margin-right: 40px;">
+  <img src="logo2.png" width="300px">
+</div>
+<div class="search_container" style="display: inline-block;"> 
+ <form class="example"  style="display: inline-block;margin:auto;width:600px">
+     <input type="text" placeholder="Искать..." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+   </form></div>
+
+<div class="table" style="width: 200px; display: inline-block;">
+  <div class = "cell" style="display: inline-block;">
+    <img src="https://image.flaticon.com/icons/svg/1782/1782950.svg" width="50px">
+  </div>
+  <div class="cell1" style="display: inline-block;">
+    <a href=""><span class="p1">Личный<br> кабинет</span></a>
+  </div>
+  </div>
+
+  <div class="table" style="width: 200px; display: inline-block;">
+  <div class = "cell" style="display: inline-block;">
+    <img src="https://image.flaticon.com/icons/png/512/1082/1082450.png" width="50px">
+  </div>
+  <div class="cell1" style="display: inline-block;">
+    <a href=""><span class="p1">Корзина</span></a>
+    <a href=""><span id = "card" class="p1">пусто</span></a>
+  </div>
+  </div>
+
+
+</div>
+<div class="vertical_container">
+  <ul class="nav-area" style="display: inline-block;">
+    <li><a href="#">Техника для кухни</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+           <h3>Хранение продуктов</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Телофоны и Гаджеты</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+          <h3>Смартфоны телефоны</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+     <li><a href="#">Бытовая техника</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+           <h3>Aудио и телевизор</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Ноутбуки и компьютеры</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+           <h3>Aудио и телевизор</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Элоктроника</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+           <h3>Aудио и телевизор</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Аксесуары для мобильных</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+           <h3>Aудио и телевизор</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Еше больше</a>
+      <div class="sub-nav">
+        <div class = "sub-menu">
+           <h3>Aудио и телевизор</h3>
+          <ul>
+            <li><a href="">Блендры</a></li>
+            <li><a href="">Термос</a></li>
+            <li><a href="">Холодильник</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+<div class="telephone_container" style="width: 1200px;" > 
+<div class="telephone_container1" style="display:inline-block; vertical-align: top;margin-top: 10px;">
+  <div class="telephone" id = "tele">
+    <a href="">+7(775)168-00-05</a>
+  </div>
+  <div class = "telephone">
+    <a href="">+7(775)168-00-95</a>  </div>  </div>
+    <div class="slideshow-container" style="display: inline-block; max-width: 400px; padding-left: 0px;vertical-align: top;" >
+
+<div class="mySlides_fade" style="width: 100%" >
+  <img src="logo3.png" style="width:100%">
+</div></div>
+
+
+
+  
+
+
+<div class="address_container" style="display:inline-block; padding-left:  0px; margin-top: 0px;">
+  <div class="address" id = "tele">
+    Режим работы: 09:00 - 19:00
+  </div>
+  <div class = "address">
+    Город:<span id = 'add1'> Бауыржан Mомышулы,  </span></br>Улица не знаю надо знать
+  </div>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="slideshow" style="display: block; width: 200px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-max-gold-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566953859132" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2wCEAAkGBxISEhUSEBEVFhUVGRcYFRgWFRUVFhYXFRgaFxgVFRUYHSggGBolGxUXITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OFQ8PFSsdFRkrKysrLSstKy0tLS0tLSsrNy03LS0tNysrKy03LTcrNysrNys3KysrKysrKysrKysrK" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNi27vhptDKjNr2H6nqZp865cYR3YV91q4XHo_3wna2CrDD07e" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+
+
+
+</body>
+</html> 
