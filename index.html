@@ -331,6 +331,59 @@ body{
   .prev, .next,.text {font-size: 11px}
 }
 
+.main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2px;
+  padding-bottom: 25px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
 
 
 }
@@ -514,6 +567,181 @@ body{
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Вам это понравиться</h1>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+<div class="main">
+
+<h1>Наши покупатели выбирают</h1>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
+      <h3>9999$</h3>
+     <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+<div class="main">
+
+<h1>Новинки</h1>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
+      <h3>9999$</h3>
+     <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
+      <h3>9999$</h3>
+      <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+     <p>Чоппер электрический Galaxy GL 2353</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+<div class="main">
+
+<h1>Товар Недели</h1>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
+      <h3>9999$</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
+      <h3>9999$</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
+      <h3>9999$</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+
+
+
 
 
 
