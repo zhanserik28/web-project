@@ -3,34 +3,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
 
 .navbar {
-  background-color: #555;
-  overflow: auto;
-  padding: 7px;
-    width: 100%;
+display: flex;
+flex-flow: row, nowrap;
+align-items: flex-start;
+justify-content: flex-start;
+ background-color: #555;
+ overflow: auto;
+ width: 100%;
+ height: 65px;
 }
-
-
+.menu{
+	margin-left: 20px;
+align-self: flex-start;
+width: 60px;
+font-size: 14px;
+cursor: pointer;
+}
 div.line{
    width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
-}
-.menu{
-
-line-height: 1.5em;
-
-margin: 0;
-padding: 6px;
-margin-right:  25px;
-width: 45px;
-padding-left: 20px;
-padding-right: 40px;
-font-size: 14px;
-cursor: pointer;
 }
 .condent{
 
@@ -44,32 +39,20 @@ margin: 0 0 0 0;
 margin-top: -8px;
 margin-left: -10px;
 }
-.table{
-  cursor: pointer;
 
-}
-.cell{
-  padding: 4px;
-}
-.cell1{
-  width: 50px;
-  margin-top: -5px;
-}
-.p1{
-line-height: 1.5em;
-font: 14px Verdana,Arial,Helvetica;
-font-family: 'Roboto',sans-serif;
-color: #fff;
-}
 
-.cell1 a{
-  text-decoration: none;
-  position: relative;
-  left: 0px;
-  top: -10px;
-  vertical-align: middle;
 
-}
+
+
+
+
+
+
+
+
+
+
+
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -106,13 +89,35 @@ form.example::after {
 
   box-sizing: border-box;
 }
-.search_container{
-  margin-right: 50px;
+.table{
+	margin-left: 40px;
+	align-self: center;
+	justify-content: center;
+  cursor: pointer;
+	width: 100px;
+}
+.cell{
+  padding: 5px;
+}
+.cell1{
+  width: 0px;
+  margin-top: -5px;
+}
+.p1{
+line-height: 1.5em;
+font: 14px Verdana,Arial,Helvetica;
+font-family: 'Roboto',sans-serif;
+color: #fff;
 }
 
+.cell1 a{
+  text-decoration: none;
+  position: relative;
+  left: 0px;
+  top: -10px;
+  vertical-align: middle;
 
-
-
+}
 
 body{
   margin: 0;
@@ -120,13 +125,15 @@ body{
 
 }
 
+
+
 .nav-area{
   position: relative;
   padding: 0;
   margin: 0;
-  background-color: rgb(85,85,85);
+  background-color: rgba(95,95,95, 1);
   letter-spacing: 2px;
-  width: 440px;
+  width: 400px;
   font-family: Poppins;
   font-size: 15px;
   line-height: 15px;
@@ -135,7 +142,7 @@ body{
 .nav-area a:link,
 .nav-area a:visited,
 .nav-area a:focus{
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -166,6 +173,7 @@ body{
   min-height: 100%;
   text-align: left;
   margin-top: 30px;
+  margin-left: -50px;
   padding: 0;
   z-index: 99;
   overflow: hidden;
@@ -228,54 +236,17 @@ body{
   -o-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
-
-
-
-
-
-
-}
-#img_1{
-  position: absolute;
-  top: 135px;
-  right: 0px;
-}
-.telephone_container{
-  position: absolute;
-  top: 100px;
-  left: 470px;
-  width: 500px;
-  
-}
-.telephone a{
-  text-decoration: none;
-  color: orange;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: arial;
-}
-
-.address_container{
-    width: 400px;
-  display: inline-block;
+.vertical_container{
+	display: flex;
+	flex-flow: row, nowrap;
+align-items: flex-start;
+justify-content: flex-start;
 
 }
-.address{
-  margin-top: 5px;
-  color: orange;
-  font-size: 25px;
-  font-weight: bold;
-  
-
-}
-
-
-
-
 
 
 .slideshow {
-  max-height: 1000px;
+  max-height:300px;
   max-width: 800px;
   position: relative;
 }
@@ -283,31 +254,30 @@ body{
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: -250px;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 23px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  border-color: black;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 0;
+  left: 650px;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-.mySlides {display: none}
+.mySlides {display: block;}
 
 .fade {
   -webkit-animation-name: fade;
@@ -315,6 +285,51 @@ body{
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+.telephone_container{
+	height: 457px;
+	border-radius: 0px 8px 8px 8px;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: flex-start;
+  justify-content: flex-start;
+
+}
+.telephone a{
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: arial;
+
+}
+.add1{
+	color: rgb(104, 175, 255);
+}
+.add3{
+	color: black;
+	font-size: 30px;
+	font-weight:  bold;
+	font-family: arial;
+	position: relative;
+	top: -190px;
+	left: 10px;
+
+}
+.address_container{
+    width: 300px;
+
+}
+.address{
+ 
+  color: orange;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: arial
+  
+
+}
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -325,73 +340,140 @@ body{
   from {opacity: .4} 
   to {opacity: 1}
 }
+.add2{
+	width: 300px;
+	height: 196px;
+	margin-right: 30px;
+	margin-left: 33px;
+	
+}
+#add4{
+	display: block;
+}
+.add{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: montserrat, sans-serif;
+}
+.slider-box{
+	border-style: solid;
+  border-width: 5px;
+	margin: 40px;
+	height: 450px;
+	width: 300px;
+	position: relative;
+	border-radius: 9px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.slider-box a{
+	text-decoration: none;
+	text-align: center;
+}
+.img-box{
+	height: 230px;
+}
+.img-box img{
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 8px;
+}
+.time{
+	position: absolute;
+	top: -30px;
+	right: 20px;
+	color: #f16007;
+	font-size: 35px;
+}
+.detail{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	font-size: 25px;
+	line-height: 25px;
+}
+.price{
+	color: black;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 20px;
+	margin-top: 25px;
+}
+.cart{
+	position: absolute;
+	bottom: 0px;
+	height: 45px;
+	background-color: #ff696e;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+}
+.cart a{
+	color: #FFFFFF;
+}
+.slider-box:hover{
+	box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+}
+.slider-box:hover .img-box img{
+	transform: scale(1.07);
+	transition: all ease 0.4s;
+}
+.cart:hover{
+	transform: scale(1.03);
+	background-color: rgb(255, 0, 0);
+	box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+	transition: all ease 0.1s;
+
+}
+.allslider-box{
+	display: flex;
+	flex-wrap: row wrap;
+}
+.heading{
+	display: flex;
+	justify-content: center;
+}
+.heading h1{
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	padding: 0px 10px;
+	margin: 20px;
+	font-size: 80px;
+	font-family: calibri;
+	background-image: linear-gradient(to right, rgba(252,97,19,1), rgba(252,97,19,0));
+
+}
+#child_h{
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	 background-image: linear-gradient(to right, rgba(252,97,19,0), rgba(252,97,19,1));
+	padding: 0px 10px;
+	margin: 20px;
+	font-size: 80px;
+	font-family: calibri;
+}
+.company{
+	display: flex;
+	flex-wrap: row nowrap;
+	align-items: center;
 }
 
-.main {
-  max-width: 1400px;
-  margin: auto;
-}
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 2px;
-  padding-bottom: 25px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-
-
-
-
-
-}
 .footer {
-    position: absolute;
-    top: 2720px;
+	margin-top: 20px;
     width: 100%;
     height: 300px;
     background-color: rgb(85,85,85);
@@ -401,11 +483,13 @@ h1 {
     justify-content: space-around;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    background-image: linear-gradient(white, rgb(95,95,95));
 }
 
 .firstF {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
+    color: black;
 }
 .mainF {
     display: flex;
@@ -414,44 +498,46 @@ h1 {
 }
 
 .firstmainF {
+
+	margin-top: -30px;
     text-align: end;
-    width: 40%;
-    font-size: 0.8em;
+    width: 60%;
+    font-size: 2em;
+    vertical-align: middle;
 }
 .secondmainF {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 40%;
+    margin-top: -50px;
+    margin-left: 0px;
     font-size: 4em;
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 .last {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
+
 </style>
 <body>
 
-<div class="navbar">
-  <div class = "menu container" style="display: inline-block;">
+<header class="navbar">
+   <div class = "menu" style="margin-top: 5px;margin-left: 40px;">
   <div class="line"></div>
   <div class="line"></div>
   <div class="line"></div>
   <p class="condent">Каталог</p>
 </div>
-<div class="logo" style="display: inline-block;margin-right: 40px;">
+<div class="logo" style="margin-top: 5px;">
   <img src="logo2.png" width="300px">
 </div>
-<div class="search_container" style="display: inline-block;"> 
- <form class="example"  style="display: inline-block;margin:auto;width:600px">
+<div class="search_container" style="width:750px;" > 
+ <form class="example"  style="width:100%; margin-top: 10px;">
      <input type="text" placeholder="Искать..." name="search2">
   <button type="submit"><i class="fa fa-search"></i></button>
    </form></div>
 
-<div class="table" style="width: 200px; display: inline-block;">
+<div class="table">
   <div class = "cell" style="display: inline-block;">
     <img src="https://image.flaticon.com/icons/svg/1782/1782950.svg" width="50px">
   </div>
@@ -460,7 +546,7 @@ h1 {
   </div>
   </div>
 
-  <div class="table" style="width: 200px; display: inline-block;">
+  <div class="table">
   <div class = "cell" style="display: inline-block;">
     <img src="https://image.flaticon.com/icons/png/512/1082/1082450.png" width="50px">
   </div>
@@ -469,11 +555,11 @@ h1 {
     <a href=""><span id = "card" class="p1">пусто</span></a>
   </div>
   </div>
+</header>
 
-
-</div>
 <div class="vertical_container" style="margin-top: 0px;">
-  <ul class="nav-area" style="display: inline-block;">
+	<div> 
+  <ul class="nav-area" >
     <li><a href="#">Техника для кухни</a>
       <div class="sub-nav">
         <div class = "sub-menu">
@@ -559,285 +645,321 @@ h1 {
       </div>
     </li>
 
-  </ul>
-<div class="telephone_container" style="width: 1050px;" > 
-<div class="telephone_container1" style="display:inline-block; vertical-align: top;margin-top: 10px;">
+  </ul></div>
+
+<div class="slideshow" style="width: 780px; height: 600px; ">
+
+<div class="mySlides fade">
+  <img src="https://payload.cargocollective.com/1/10/328040/4972000/logo2_o.jpg" style="width:100%; border-radius: 0 0 10px 0; ">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="add" style="width: 1100px; height: 215px; margin-top: -35px;">
+	<div class = "add2"><img style = "width: 100%; border-radius: 10px;border-style: solid;
+  border-width: 5px;"src="https://newdedmoroz.com/wp-content/uploads/2017/10/kuponator1.jpg"><span class="add3">Товор дня</span>
+	</div>
+	<div class = "add2"><img style = "width: 100%; border-style: solid;
+  border-width: 5px; border-radius: 10px;"src="https://newdedmoroz.com/wp-content/uploads/2017/10/kuponator1.jpg"><span class="add3">Подарки</span>
+	</div>
+	<div id = "add4" style="width: 330px; height: 196px;border-style: solid;
+  border-width: 5px; background-color: white;margin-left: 40px;border-radius: 10px;">
+		<a class = "add5" style = "display: block; text-decoration: none; font-size:30px; text-align: center; color: blue; font-weight: bold; font-family: arial; " href="">О Компании</a>
+		<span style="display: block; font-size: 45px; text-align: center; font-weight: bold; color: orange; ">Помощь</span>
+		<a class = "add5" style = "display: block; text-decoration: none; font-size:30px; text-align: center; color: rgb(104, 175, 255); padding-bottom: 10px; font-weight: bold; font-family: arial; "href="">Способ Оплаты</a>
+		<a class = "add5" style = "display: block; text-decoration: none; font-size:30px; text-align: center; color: rgb(104, 175, 255); font-weight: bold; font-family: arial; padding-bottom: 10px;" href="">Способ Доставки</a>
+	</div>
+</div>
+</div>
+<div class="telephone_container" style="width: 500px;border-style: solid;
+  border-width: 5px;" > 
+<div class="telephone_container1" style="display:inline;margin-top: 30px; ">
   <div class="telephone" id = "tele">
     <a href="">+7(775)168-00-05</a>
   </div>
   <div class = "telephone">
     <a href="">+7(775)168-00-95</a>  </div>  </div>
-    <div class="slideshow-container" style="display: inline-block; max-width: 300px; padding-left: 0px;vertical-align: top;margin-left: 40px;" >
-
-<div class="mySlides_fade" style="width: 100%" >
+  <div class="slideshow-container" style="display: inline;margin-top: 30px;" >
+	<div class="mySlides_fade" style="width: 100%" >
   <img src="logo3.png" style="width:100%">
 </div></div>
+<div class="address_container" style="display:inline;margin-top: 30px;">
+  <div class="address" id = "tele"> Режим работы: </br><span class = 'add1'>09:00 - 19:00</span></div>
+  <div class = "address"> Город:</br><span class = 'add1'> Бауыржан Mомышулы,  </span></br>Улица не знаю надо знать </div>
+</div>
+</div>
+		
+</div>
+<div class="heading">
+	<h1>Новинки</h1>
+	
+</div>
+<div class="allslider-box">
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+</div>
+<div class="heading">
+	<h1>Скидки</h1>
+	
+</div>
+<div class="allslider-box">
+<div class="slider-box">
+	<p class="time">30%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">20%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">10%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">40%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+</div>
+<div class="heading">
+	<h1>Хит продаж</h1>
+	
+</div>
+<div class="allslider-box">
+<div class="slider-box">
+	<p class="time">5%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">0%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">2%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">0%</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+</div>
+<div class="heading">
+	<h1>Больше товаров</h1>
+	
+</div>
+<div class="allslider-box">
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+<div class="slider-box">
+	<p class="time">New</p>
+	<div class="img-box">
+		<img src="https://brain-images-ssl.cdn.dixons.com/3/4/10185943/l_10185943_001.jpg">
+	</div>
+	<p class="detail">Iphone 11 Max Pro
+		<a href="#" class="price">Price-40$</a>
+	</p>
+	<div class="cart">
+		<a href="#">В Корзину</a>
+	</div>
+</div>
+</div>
+<div class="heading">
+	<h1 id = child_h>О Компании</h1>
+	
+</div>
+<div class="company"> 
+	<div style="width: 1500px; height: 520px;border-right-style: solid; border-color: orange; border-width: 6px;margin-right: 20px;">
+		
+	</div>
+<div>
+	<h1 style="color: rgba(255, 161, 0, 0.8)">TechnoMarket Burnoe — Впервые в казахстанский интернет-магазин </h1>
+	<p style="font-size: 18px;  font-family: Arial, Helvetica, sans-serif;">В далеком 2019 году мы решили, что совершать покупки онлайн должно быть легко и приятно. Все эти годы мы занимались любимым делом и совершенствовались — все как для себя. И на сегодняшний день наша компания стала одним из новых интернет-магазинов в Казахстане.</p>
+	
+	<b style="font-size: 25px;">Огромный выбор</b>
+	<br>
+	<p style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; ">Интернет-магазин TechnoMarket Burnoe  – лучшее место для покупки модной женской одежды и обуви новых коллекций.<br>
+
+Здесь можно найти все: от элегантных платьев до строгих деловых костюмов. Девушка со вкусом легко подберёт себе гардероб на все случаи жизни и все сезоны. Поможет ей в этом фирменный гид по стилю. Делать покупки на TechnoMarket Burnoe легко – всего два клика, и заказ оформлен.<br>
+
+В каталоге представлены известные бренды различных категорий: премиум, масс-маркет, эконом, дизайнерская одежда. Большой выбор фирменных аксессуаров, косметики, парфюма и товаров для спорта и фитнеса.</p>
+
+<b style="font-size: 25px;">Мы не останавливаемся на достигнутом!</b>
+<p style="font-size: 18px;  font-family: Arial, Helvetica, sans-serif;">Наш ассортимент непрерывно растет. Это значит, что у нас еще больше качественных, интересных и полезных товаров!
+Наши первые клиенты помнят нас как неутомимых книгоманов, но сегодня мы готовы удивить каждого! Хозяйки порадуются товарам, которые значительно облегчат жизнь: посуда, бытовая техника, постельное белье и еще много всего. Для дачников большой ассортимент семян и инструментов для участка. Кто ж не любит модные гаджеты? Смартфоны, фитнес-браслеты, беспроводные наушники и это далеко не все. А еще мы за здоровый образ жизни! Вы легко найдете у нас спорттовары от скакалки до спортивной одежды мировых брендов. Собираетесь делать ремонт? мы и тут вам поможем! Фотообои, лампочки, инструменты и многое другое. Модницы, да и просто все те, кто следит за собой, оценят большой выбор декоративной и уходовой косметики, модных аксессуаров, ювелирных украшений. Вы любите своего домашнего питомца? Порадуйте своего хвостатого или пернатого друга обновками. Ну и конечно, мы не можем обделить вниманием детей! Огромный выбор игрушек просто не оставит их равнодушными!</p>
+</div>
+</div>
 
 
-
+<footer class="footer">
   
-
-
-<div class="address_container" style="display:inline-block; padding-left:  0px; margin-top: 0px;margin-left: 40px;">
-  <div class="address" id = "tele">
-    Режим работы: 09:00 - 19:00
-  </div>
-  <div class = "address">
-    Город:<span id = 'add1'> Бауыржан Mомышулы,  </span></br>Улица не знаю надо знать
-  </div>
-</div></div>
-
-
-
-
-
-
-
-
-<div class="slideshow" style="display:inline-block; width: 600px; height: 300px; position: relative; top: -100px; left: 200px; ">
-
-<div class="mySlides fade">
-  <img src="http://chel.fas.gov.ru/sites/chel.f.isfb.ru/files/images/20151405161942.jpg" style="width:120%; ">
-</div>
-
-<div class="mySlides fade">
-  <img src="http://chel.fas.gov.ru/sites/chel.f.isfb.ru/files/images/20151405161942.jpg" style="width:120%">
-</div>
-
-<div class="mySlides fade">
-  <img src="data:image/jpeg;base64,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" style="width:100%; margin-top: -30px;">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-
-
-<!-- MAIN (Center website) -->
-<div class="main">
-
-<h1>Вам это понравиться</h1>
-
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-
-
-<!-- END MAIN -->
-</div>
-<div class="main">
-
-<h1>Наши покупатели выбирают</h1>
-
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
-      <h3>9999$</h3>
-     <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-
-
-<!-- END MAIN -->
-</div>
-<div class="main">
-
-<h1>Новинки</h1>
-
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
-      <h3>9999$</h3>
-     <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
-      <h3>9999$</h3>
-      <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-     <p>Чоппер электрический Galaxy GL 2353</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-
-
-<!-- END MAIN -->
-</div>
-<div class="main">
-
-<h1>Товар Недели</h1>
-
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Lights" style="width:100%">
-      <h3>9999$</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Nature" style="width:100%">
-      <h3>9999$</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://dekoriko.ru/images/article/croppedtop/718-400/2017/05/blendery-sovremennye-modeli-i-sovety-po-vyboru-101.jpg" alt="Mountains" style="width:100%">
-      <h3>9999$</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-
-
-<!-- END MAIN -->
-</div>
-  <div class="footer">
-            <div class="firstF">КОНТАКТЫ</div>
+            
+                
+               <div class="firstF" style="">КОНТАКТЫ</div>
             <div class="mainF">
                 
                 <div class="secondmainF">
-                        Technomarket
-                        <span>Kazakhstan</span>
+                        <span style="color: orange">Technomarket</span>
+                        <span style="color: rgb(20, 120, 239)">Burnoe</span>
                 </div>
-                <div class="firstmainF">
-                        Директор PR —
-                        <br>
+                <div style="color: black" class="firstmainF">
+                       
                         Диана Снегина
                         <br>
-                        tel. + 7 727 356 05 55 (вн. 240) ; + 7 777 781 77 71
+                        <span style="color: black; padding:  15px; ">
+                        tel. + 7 727 356 05 55 ; <br>+ 7 777 781 77 71</span>
                 </div>
             </div>
-            <div class="last">
+            <div class="last" style="">
                 Издательский дом «Technomarket Burnoe»
                 050002, г. Тараз, ул. Зенкова,
                 22, Дом офицеров, офис 600.
                 Телефон рекламного отдела: +7 727 356 05 59
                 www.technomarket_burnoe.kz
             </div>
-            
+</footer>
 
-        </div>
-
-
-
-
-
-
-
-
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("fade");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
- 
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
 </body>
 </html> 
