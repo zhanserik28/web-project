@@ -531,14 +531,14 @@ form {
   <div class="line"></div>
   <div class="line"></div>
   <div class="line"></div>
-  <p class="condent">РљР°С‚Р°Р»РѕРі</p>
+  <p class="condent">Каталог</p>
 </div>
 <div class="logo" style="margin-top: 5px;">
   <img src="logo2.png" width="300px">
 </div>
 <div class="search_container" style="width:750px;" > 
  <form class="example"  style="width:100%; margin-top: 0px;">
-     <input type="text" placeholder="РСЃРєР°С‚СЊ..." name="search2">
+     <input type="text" placeholder="Искать..." name="search2">
   <button type="submit"><i class="fa fa-search"></i></button>
    </form></div>
 
@@ -547,7 +547,7 @@ form {
     <img src="https://image.flaticon.com/icons/svg/1782/1782950.svg" width="50px">
   </div>
   <div class="cell1" style="display: inline-block;">
-    <a href=""><span class="p1">Р›РёС‡РЅС‹Р№<br> РєР°Р±РёРЅРµС‚</span></a>
+    <a href=""><span class="p1">Личный<br> кабинет</span></a>
   </div>
   </div>
 
@@ -556,8 +556,8 @@ form {
     <img src="https://image.flaticon.com/icons/png/512/1082/1082450.png" width="50px">
   </div>
   <div class="cell1" style="display: inline-block;">
-    <a href=""><span class="p1">РљРѕСЂР·РёРЅР°</span></a>
-    <a href=""><span id = "card" class="p1">РїСѓСЃС‚Рѕ</span></a>
+    <a href=""><span class="p1">Корзина</span></a>
+    <a href=""><span id = "card" class="p1">пусто</span></a>
   </div>
   </div>
   
@@ -566,7 +566,7 @@ form {
 
 <div class="information">
 	<aside class="information_left">
-		<h1 style="color: rgb(75,75,75); text-align: start; vertical-align: bottom; padding-left: 7px;">Р¦РµРЅР°</h1>
+		<h1 style="color: rgb(75,75,75); text-align: start; vertical-align: bottom; padding-left: 7px;">Цена</h1>
 		  <div class="range-filter">
             <div class="range-controls">
                 <div class="scale"><div style="margin-left:10px;width:150px;" class="bar"></div></div>
@@ -574,13 +574,13 @@ form {
                 <div class="toggle max-toggle" style="left:180px;"></div>
             </div>
             <div class="price-controls">
-                РѕС‚ <input class="min-price" type="text" value="1 000">
-                РґРѕ <input class="max-price" type="text" value="2 000">
+                от <input class="min-price" type="text" value="1 000">
+                до <input class="max-price" type="text" value="2 000">
             </div>
         </div>
         
         <div class = "list-group">
-        	<h1 style="color: rgb(75,75,75); text-align: start; vertical-align: bottom; padding-left: 7px;">Р‘СЂРµРЅРґ</h1>
+        	<h1 style="color: rgb(75,75,75); text-align: start; vertical-align: bottom; padding-left: 7px;">Бренд</h1>
         	<div style="height: 480px; overflow-y: auto; overflow-x: hidden;">
         		<div class="list-group-item checkbox">
         			<label>
@@ -680,7 +680,7 @@ form {
 	<article class="information_right">
 		<div class="box">
   <select>
-    <option>РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ ...</option>
+    <option>Сортировать по ...</option>
     <option>Option 2</option>
     <option>Option 3</option>
     <option>Option 4</option>
@@ -710,15 +710,10 @@ form {
 
 
 
-
-<div id = "error"></div>
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Image</th>
-      <th colspan="2">Action</th>
+      <div id="error" class="color: red;"></div>
     </tr>
   </thead>
   <tbody>
@@ -737,7 +732,7 @@ form {
     
   </tbody>
 </table>
-<form method="post" id = "form" action="server.php" >
+<form method="post" id = "form" action="server.php" onsubmit="return validation()">
 <input type="hidden" name="id" value="<?php echo $id; ?>">
     <div class="input-group">
       <label>Name</label>
@@ -769,7 +764,7 @@ form {
   
             
                 
-               <div class="firstF" style="">РљРћРќРўРђРљРўР«</div>
+               <div class="firstF" style="">КОНТАКТЫ</div>
             <div class="mainF">
                 
                 <div class="secondmainF">
@@ -778,17 +773,17 @@ form {
                 </div>
                 <div style="color: black" class="firstmainF">
                        
-                        Р”РёР°РЅР° РЎРЅРµРіРёРЅР°
+                        Диана Снегина
                         <br>
                         <span style="color: black; padding:  15px; ">
                         tel. + 7 727 356 05 55 ; <br>+ 7 777 781 77 71</span>
                 </div>
             </div>
             <div class="last" style="">
-                РР·РґР°С‚РµР»СЊСЃРєРёР№ РґРѕРј В«Technomarket BurnoeВ»
-                050002, Рі. РўР°СЂР°Р·, СѓР». Р—РµРЅРєРѕРІР°,
-                22, Р”РѕРј РѕС„РёС†РµСЂРѕРІ, РѕС„РёСЃ 600.
-                РўРµР»РµС„РѕРЅ СЂРµРєР»Р°РјРЅРѕРіРѕ РѕС‚РґРµР»Р°: +7 727 356 05 59
+                Издательский дом «Technomarket Burnoe»
+                050002, г. Тараз, ул. Зенкова,
+                22, Дом офицеров, офис 600.
+                Телефон рекламного отдела: +7 727 356 05 59
                 www.technomarket_burnoe.kz
             </div>
 </footer>
@@ -796,34 +791,24 @@ form {
 
 </body>
 <script type="text/javascript">
-const name = document.getElementById('name')
-const price = document.getElementById('price');
-const url = document.getElementById('url');
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
-
-form.addEventListener('submit', (e) => {
-  let messages = []
-  if (name.value === '' || name.value == null) {
-    messages.push('Name is required')
+const name = document.getElementById('name').value;
+const price = document.getElementById('price').value;
+const url = document.getElementById('url').value;
+const form = document.getElementById('form').value;
+const errorElement = document.getElementById('error').value;
+function validation(){
+  if (name ==='' || url ===''){
+    document.getElementById('error').innerHTML = "All field required";
+    return false;
   }
-
-  if ((Number)price.value> 6) {
-    messages.push('Password must be longer than 6 characters')
+  if(price<0){
+    document.getElementById('error').innerHTML = "Must be positive";
+    return false;
   }
-
-  if (password.value.length >= 20) {
-    messages.push('Password must be less than 20 characters')
+  else{
+    return true;
   }
+}
 
-  if (password.value === 'password') {
-    messages.push('Password cannot be password')
-  }
-
-  if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-  }
-})
 </script>
 </html>
